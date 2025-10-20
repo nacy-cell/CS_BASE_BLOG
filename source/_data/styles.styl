@@ -1,0 +1,41 @@
+/* 1. 全局背景：确保背景图+透明底色生效 */
+body {
+    background: rgba(255, 255, 255, 0) url(/images/background.png) !important;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
+    background-size: cover !important;
+    background-position: center !important;
+    color: #000 !important; /* 确保文字黑色生效 */
+}
+
+/* 2. 文章背板：强化半透明效果 */
+html .main-inner > .sub-menu, 
+html .main-inner > .post-block, 
+html .main-inner > .tabs-comment, 
+html .main-inner > .comments, 
+html .main-inner > .pagination {
+    background: #f5f5f56b !important; /* 十六进制带透明度，等效 rgba(245,245,245,0.42) */
+}
+
+/* 3. 文章标题与元信息 */
+.posts-expand .post-title-link {
+    color: #000 !important; /* 标题黑色 */
+}
+.posts-expand .post-meta-container {
+    color: #880000 !important; /* 日期红色 */
+}
+
+/* 4. 菜单栏与搜索框 */
+.header-inner {
+    background: rgba(255,255,255,0.7) !important; /* 70%透明白 */
+}
+.popup {
+    opacity: 0.5 !important; /* 搜索框50%透明 */
+}
+
+/* 5. 主体背景透明 */
+.main-inner {
+    background-color: rgba(255, 255, 255, 0.8) !important;
+    padding: 0px 40px 40px 40px !important;
+}
+
