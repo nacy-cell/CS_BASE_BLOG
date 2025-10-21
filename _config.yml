@@ -127,7 +127,15 @@ live2d:
     use: live2d-widget-model-koharu
   display:
     position: right
-    width: 150
-    height: 300
+    width: 225
+    height: 450
   mobile:
     show: false
+
+symbols_count_time:
+  enable: true        # 总开关必须开启
+  post: true          # 允许文章页统计
+  symbols: true       # 同时开启字数统计（可选，不影响时间统计）
+  time: false         # 核心：开启阅读时间统计（关键配置）
+  awl: 4              # 平均词长（与主题配置保持一致）
+  wpm: 275            # 每分钟阅读词数（控制时间计算）
