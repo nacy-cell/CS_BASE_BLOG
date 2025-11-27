@@ -1,9 +1,9 @@
 ---
 title: "Spring"  
-date: 2025-11-24 23:22:22
+date: 2025-11-26 23:22:22
 categories: 
   - 八股
-  - Java基础
+  - Spring
 ---
 
 ## spring的核心思想说说你的理解？
@@ -109,7 +109,7 @@ Spring只解决了第三种循环依赖问题
 - 继续进行A的依赖注入，注入B
 - A依赖注入成功，初始化完成，添加到一级缓存
   
-![8979ac65e61d689a34afaaa56a40633a_720](https://i-blog.csdnimg.cn/img_convert/a5a85d9cc6661b527e6608886167387b.jpeg)
+![Spring-2025-11-27-01-26-36](https://csbase-blog.oss-cn-beijing.aliyuncs.com/Spring-2025-11-27-01-26-36.png)
 
 
 ## 如果只有一级缓存，能不能解决循环依赖问题？
